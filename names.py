@@ -32,6 +32,8 @@ while 1:
     if not line:
         break
 
+names.sort()
+
 for firstname in names:
     for middlename in names:
         if firstname != middlename:
