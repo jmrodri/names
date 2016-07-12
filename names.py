@@ -40,4 +40,6 @@ for firstname in names:
             if not lastname:
                 print "%s %s" % (firstname, middlename)
             else:
-                print "%s %s %s" % (firstname, middlename, lastname)
+                print "%s %s %s - %s%s%s" % (
+                    firstname, middlename, lastname,
+                    firstname[:1], middlename[:1], lastname[:1])
