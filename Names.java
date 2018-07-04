@@ -49,9 +49,12 @@ public class Names {
             for (String middlename: names) {
                 if (firstname != middlename) {
                     String msg;
-                    if (lastname == "") {
+                    if (lastname.equals("")) {
 					    msg = String.format("%s %s\n", firstname, middlename);
                     } else {
+                        System.out.println("[" + firstname + "]");
+                        System.out.println("[" + middlename + "]");
+                        System.out.println("[" + lastname + "]");
 					    msg = String.format("%s %s %s - %s%s%s\n",
 						    firstname, middlename, lastname,
                             String.valueOf(firstname.charAt(0)),
